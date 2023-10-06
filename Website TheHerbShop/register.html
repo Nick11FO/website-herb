@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== WEBSITE LOGO =========-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/register.css">
+
+    <title>The Herb Shop</title>
+</head>
+<body>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+        <!--==================== LEFT ====================-->
+        <div class="left__container">
+            <div class="register__image-background">
+                <!-- <img src="./assets/img/register-pict.png" alt="" class="register__img-background"> -->
+            </div>
+
+            <div class="register__image">
+                <img src="./assets/img/register-pict.png" alt="" class="register__img">
+                <div class="shop__name">THE HERB SHOP</div>
+            </div>
+        </div>
+
+        <!--==================== RIGHT ====================-->
+        <div class="right__container">
+            <div class="register__container">
+                <!--==================== TITLE ====================-->
+                <div class="title__container">
+                    <h1 class="title-register">
+                        REGISTER
+                    </h1>
+                </div>
+
+                <!--==================== FORM ====================-->
+                <form action="" class="register__form">
+                    <div class="register__box">
+
+                        <!--==================== ISI FORM ====================-->
+                        <div class="name__container">
+                            <div class="input__form">
+                                <input type="text" class="register__input" id="fname" required placeholder=" "> 
+                                <label for="fname" class="register__label">First Name</label>
+                            </div>
+
+                            <div class="input__form">
+                                <input type="text" class="register__input" id="lname" required placeholder=" "> 
+                                <label for="lname" class="register__label">Last Name</label>
+                            </div>
+                        </div>
+                        
+                        <div class="input__form">
+                            <input type="text" class="register__input" id="email" required placeholder=" "> 
+                            <label for="email" class="register__label">Email</label>
+                        </div>
+                
+
+                        <div class="input__form">
+                            <input type="password" class="register__input" id="password" required placeholder=" ">
+                            <label for="email" class="register__label">Password</label>
+                        </div>
+
+                        <div class="input__form">
+                            <input type="password" class="register__input" id="cpassword" required placeholder=" ">
+                            <label for="email" class="register__label">Confirm Password</label>
+                        </div>
+
+                        <!--==================== BUTTON ====================-->
+                        <div class="button__container">
+                            <button class="register__button button">Register</button>
+                            <button class="login__button button" formnovalidate formaction="/login.html">Login</button>
+                        </div>
+                        
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+    
+</body>
+</html>

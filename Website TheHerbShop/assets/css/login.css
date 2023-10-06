@@ -1,0 +1,272 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=DM+Serif+Text&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=DM+Sans:opsz@9..40&family=DM+Serif+Text&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=DM+Sans:opsz@9..40&family=DM+Serif+Display:ital@1&family=DM+Serif+Text&family=Raleway:wght@100&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --main-color: hsl(295, 47%, 71%);
+    --black-color: hsl(0, 0%, 0%);
+    --black-color-light: hsl(0, 0%, 40%);
+    --white-color: hsl(0, 0%, 95%);
+    --title-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 35%);
+    --text-color-light: hsl(0, 0%, 64%);
+    /* --body-color: hsl(0, 0%, 87%) */
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --shop-name-font: "DM Serif Display";
+    --title-font: "DM Serif Text";
+    --body-font: "DM Sans";
+    --biggest-font-size: 2.5rem;
+    /* --title-font-size: 4rem; */
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*=============== STARTS HERE ===============*/
+.main{
+    display: flex;
+}
+
+.left__container,
+.right__container{
+    flex: 50%;
+    padding: 10px;
+}
+
+/* .login__img-background{
+    filter: blur(5px);
+    position: relative;
+    top: -50%;
+} */
+
+/*=============== RIGHT CONTENT ===============*/
+.login__image-background{
+    border: 1px solid black;
+    background-image: url(/assets/img/login-pict-background.png);
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    transform: translate(0, -50%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    
+}
+
+.login__image-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.12); /* Adjust the opacity here */
+    filter: blur(4px); /* Apply blur to the overlay */
+}
+
+.login__img{
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+}
+
+.login__image{
+    /* border-left: px solid black; */
+    margin-top: 4.2rem;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+}
+
+.shop__name{
+    font-family: var(--shop-name-font);
+    color: var(--white-color);
+    position: absolute;
+    bottom: 55px;
+    right: 160px;
+    font-size: var(--normal-font-size);
+    padding: 10px 20px;
+}
+
+/*=============== lEFT CONTENT ===============*/
+.left__container{
+    border: 10px solid white;
+}
+
+.login__container{
+    width: 400px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.82rem;
+}
+
+.title-login{
+    font-family: var(--title-font);
+    font-weight: var(--font-medium);
+    font-size: var(--biggest-font-size);
+}
+
+.login__box{
+    margin-top: 2rem;
+}
+
+.input__form{
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.login__label{
+    position:absolute;
+	top:0px;
+	left:0px;
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    pointer-events: none;
+    transition: top .4s;
+}
+
+.login__input{
+    border:0;
+    border-bottom:1px solid black;  
+    width:100%;
+    padding:8px 0 5px 0;
+    background:transparent;
+    font-size:var(--normal-font-size);
+    font-family: var(--body-font);
+} 
+
+.login__input:focus{
+    border:none;	
+    outline:none;
+    border-bottom:1px solid #e74c3c;	
+}
+
+.login__input:focus + label{
+    top:-25px;
+    transition: top .4s;
+}
+
+.login__input:-webkit-autofill{
+    transition: background-color 6000s, color 6000s;
+}
+
+/* Move label up & sticky label */
+.login__input:focus + .login__label,
+.login__input:not(:placeholder-shown) + .login__label{
+    top: -25px;
+}
+
+
+.button__container button{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-medium);
+}
+
+.login__button{
+    color: var(--white-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--main-color);
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border: 0px solid black;
+}
+
+.register__button{
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-medium);
+    color: var(--main-color);
+    background-color: white;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border: 1px solid var(--main-color);
+}
+
+.forgot__password{
+    position: relative;
+    left: 74%;
+    font-size: var(--small-font-size);
+    color: var(--main-color);
+}
+
+
+
+
+
