@@ -258,6 +258,13 @@ img {
     border: 0px solid black;
 }
 
+.register__button:hover{
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    transition: background-color .5s;
+}
+
 .login__button{
     color: var(--main-color);
     background-color: white;
@@ -267,3 +274,8 @@ img {
     border: 1px solid var(--main-color);
 }
 
+.login__button:hover{
+    color: var(--white-color);
+    background-color: var(--main-color);
+    transition: background-color .5s;
+}
