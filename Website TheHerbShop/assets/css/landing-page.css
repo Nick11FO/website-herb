@@ -129,7 +129,137 @@ img {
     top: -150px;
 }
 
+/*=============== DROPDOWN ===============*/
+.dropdown{
+    position: fixed;
+    background-color: var(--black-color);
+    height: 708px;
+    width: 1472.8px;
+    top: -800px;
+    z-index: 1;
+    transition: top 0.7s;
+}
 
+.dropdown__header{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 1472.8px;
+}
+
+.dropdown__header-left{
+    width: 90%;
+}
+
+.dropdown__header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10%;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    color: var(--white-color);
+}
+
+.dHeader__cart,
+.dHeader__account{
+    margin-top: .3rem;
+}
+
+#dHeader-close{
+    font-size: 1.7rem;
+
+}
+
+.dHeader__shop-name{
+    font-family: var(--shop-name-font);
+    margin-left: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.dHeader__the, 
+.dHeader__herb,
+.dHeader__shop{
+    margin: 0;
+    padding: 0;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.dropdown__left,
+.dropdown__right{
+    width: 50%;
+}
+
+.dropdown__left{
+    margin-left: 23rem;
+    margin-top: 3rem;
+}
+
+.dropdown__left-up,
+.dropdown__left-mid{
+    margin-bottom: 3rem;
+}
+
+.dropdown
+
+.dropdown__home, 
+.dropdown__herbs,
+.dropdown__contact{
+    font-family: var(--title-font);
+    font-size: var(--biggest-font-size);
+    color: var(--white-color);
+}
+
+.dropdown__herbs-sub{
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--white-color);
+}
+
+.dropdown__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.9rem;
+    width: 96.5%;
+    align-self: center;
+}
+
+.dropdown__footer-left{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.9rem;
+    justify-content: space-evenly;
+    width: 230px;
+}
+
+.dropdown__footer__ig-link{
+    color: var(--white-color);
+}
+
+.dropdown__footer__icon-img{
+    width: 22px;
+    height: 22px;
+}
+
+.dropdown__footer__os-btn{
+    width: 140px;
+    height: 35px;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-regular);
+    background-color: transparent;
+    border-radius: 60px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.dropdown__footer__os-btn:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: background-color .4s;
+}
 
 /*=============== HEADER HOME ===============*/
 .header__home{
@@ -544,6 +674,12 @@ img {
     border-radius: 100%;
     background-color: #CAA2DA;
 }
+
+/* #testimony__carousel-img-1, 
+#testimony__carousel-img-2, 
+#testimony__carousel-img-3{
+   opacity: 0;
+} */
 
 /*=============== ADVANTAGES ===============*/
 .advantages{
