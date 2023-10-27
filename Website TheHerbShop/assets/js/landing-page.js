@@ -1,3 +1,38 @@
+/*=============== NAVBAR DROPDOWN ===============*/
+function checkDropdownPosition() {
+    var dropdown = document.querySelector('.dropdown');
+    var body = document.querySelector('body');
+
+    var dropdownTop = dropdown.style.top;
+
+    if (dropdownTop === '0px') {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = 'visible'; // or 'auto' if you want to revert to the default behavior
+    }
+}
+
+document.getElementById("tHeader-menu").addEventListener("click", function() {
+    var dropdown = document.querySelector(".dropdown");
+
+    // Change the top position to 0
+    dropdown.style.top = "0"; 
+    checkDropdownPosition()
+});
+
+document.getElementById("dHeader-menu").addEventListener("click", function() {
+    var dropdown = document.querySelector(".dropdown");
+
+    var currentTop = parseInt(dropdown.style.top);
+
+    if (currentTop === 0) {
+        dropdown.style.top = "-800px";
+    }
+
+    checkDropdownPosition()
+});
+
+
 /*=============== NAVBAR DISSAPPEAR IN HOME ===============*/
 window.onload = function() {
     hideNavbarOnLoad();
@@ -13,7 +48,7 @@ window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
             var header = document.getElementById("header");
-            var shopCart = document.getElementById("tHeader__shopCart");
+            var shopCart = document.getElementById("tHeader-shopCart");
             var homeSection = document.getElementById("home");
             
             var shopCartPosition = shopCart.getBoundingClientRect();
@@ -31,10 +66,10 @@ window.onscroll = function() {scrollFunction()};
         
 /*=============== NAVBAR COLOR CHANGE ===============*/ 
 document.addEventListener('DOMContentLoaded', function() {
-    const shopCartIcon = document.getElementById('tHeader__shopCart');
+    const shopCartIcon = document.getElementById('tHeader-shopCart');
     const newCollectionSection = document.getElementById('new-collection');
     const testimonyCarouselSection = document.getElementById('testimony-carousel');
-    const otherIcons = document.querySelectorAll('.ri-shopping-cart-line, .ri-user-line, .ri-menu-line');
+    const otherIcons = document.querySelectorAll('#tHeader-shopCart, #tHeader-account, #tHeader-menu');
     
     function changeColorToWhite() {
         shopCartIcon.style.color = 'white';
