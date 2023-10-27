@@ -32,14 +32,14 @@
 
             <div class="true__header-right">
                 <div class="tHeader__cart">
-                    <i class="ri-shopping-cart-line" id="tHeader__shopCart"></i>
+                    <i class="ri-shopping-cart-line" id="tHeader-shopCart"></i>
                 </div>
 
                 <div class="tHeader__account">
-                    <i class="ri-user-line"></i>
+                    <i class="ri-user-line" id="tHeader-account"></i>
                 </div>
 
-                <div class="tHeader__menu">
+                <div class="tHeader__menu" id="tHeader-menu">
                     <i class="ri-menu-line"></i>
                 </div>
             </div>
@@ -48,6 +48,98 @@
 
     <!--==================== MAIN ====================-->
     <main class="main">
+        <!--==================== DROPDOWN ====================-->
+        <div class="dropdown">
+            <div class="dropdown__container">
+                <nav class="dropdown__header" id="dropdown-header">
+                    <div class="dropdown__header-left">
+                        <div class="dHeader__shop-name">
+                            <p class="dHeader__the">THE</p>
+                            <p class="dHeader__herb">HERB</p>
+                            <p class="dHeader__shop">SHOP</p> 
+                        </div>
+                    </div>
+        
+                    <div class="dropdown__header-right">
+                        <div class="dHeader__cart">
+                            <i class="ri-shopping-cart-line"></i>
+                        </div>
+        
+                        <div class="dHeader__account">
+                            <i class="ri-user-line"></i>
+                        </div>
+        
+                        <div class="dHeader__menu" id="dHeader-menu">
+                            <i class="ri-close-line" id="dHeader-close"></i>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="drowdown__content-main">
+                    <div class="dropdown__left">
+                        <div class="dropdown__left-up">
+                            <a href="./landing-page.html" class="dropdown__home">HOME</a>
+                        </div>
+
+                        <div class="dropdown__left-mid">
+                            <a href="" class="dropdown__herbs">HERBS</a>
+
+                            <p class="dropdown__herbs-sub">ALCHEMICAL</p>
+                            <p class="dropdown__herbs-sub">MAGICAL</p>
+                            <p class="dropdown__herbs-sub">HEALING</p>
+                        </div>
+
+                        <div class="dropdown__left-bot">
+                            <a href="" class="dropdown__contact">CONTACT</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown__right">
+
+                    </div>
+                </div>
+
+                <div class="dropdown__footer">
+                    <div class="dropdown__footer-left">
+                        <div class="dropdown__footer__ig">
+                            <a href="" class="dropdown__footer__ig-link">
+                                <img src="./assets/img/icon/ri_instagram-fill.png" alt="" class="dropdown__footer__icon-img">
+                            </a>
+                        </div>
+        
+                        <div class="dropdown__footer__twit">
+                            <a href="" class="dropdown__footer__twit-link">
+                                <img src="./assets/img/icon/twitter-icon.png" alt="" class="dropdown__footer__icon-img">
+                            </a>
+                        </div>
+        
+                        <div class="dropdown__footer__linkedin">
+                            <a href="" class="dropdown__footer__linked-link">
+                                <img src="./assets/img/icon/ri_linkedin-fill.png" alt="" class="dropdown__footer__icon-img">
+                            </a>
+                        </div>
+        
+                        <div class="dropdown__footer__discord">
+                            <a href="" class="dropdown__footer__dc-link">
+                                <img src="./assets/img/icon/ri_discord-fill.png" alt="" class="dropdown__footer__icon-img">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="dropdown__footer-right">
+                        <div class="dropdown__footer__button-os-container">
+                            <button class="dropdown__footer__os-btn button">
+                                Our Story
+                                <i class="ri-arrow-right-up-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
         <!--==================== HEADER HOME ====================-->
         <div class="header__home">
             <nav class="nav">
@@ -300,7 +392,7 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/img/testimony-pict.png" class="d-block w-100" id="testimony__carousel-img" alt="...">
+                        <img src="./assets/img/testimony-pict.png" class="d-block w-100" id="testimony__carousel-img-1" alt="...">
                         <div class="carousel-caption d-none d-md-block" id="bs__overides-carousel-caption-1">
                             <h5 class="carousel__name">GANDALF THE GREY</h5>
                             <p class="carousel__testimony-para">
@@ -312,7 +404,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="./assets/img/testimony-pict.png" class="d-block w-100" id="testimony__carousel-img alt="...">
+                        <img src="./assets/img/testimony-pict.png" class="d-block w-100" id="testimony__carousel-img-2 alt="...">
                         <div class="carousel-caption d-none d-md-block" id="bs__overides-carousel-caption-2">
                             <h5 class="carousel__name">SYAFIQ THE HOBBIT</h5>
                             <p class="carousel__testimony-para">
@@ -324,7 +416,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="./assets/img/testimony-pict.png" class="d-block w-100" id="testimony__carousel-img alt="...">
+                        <img src="./assets/img/testimony-pict.png" class="d-block w-100" id="testimony__carousel-img-3 alt="...">
                         <div class="carousel-caption d-none d-md-block" id="bs__overides-carousel-caption-3">
                             <h5 class="carousel__name">MATT THE EXECUTOR</h5>
                             <p class="carousel__testimony-para">
